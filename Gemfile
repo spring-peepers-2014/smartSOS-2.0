@@ -29,8 +29,6 @@ gem 'bootstrap-sass', '~> 3.1.1'
 # Date Validation for Active Model
 gem 'validates_timeliness', '~> 3.0'
 
-gem 'faker', '~> 1.3.0'
-
 group :doc do
   gem 'sdoc', '~> 0.4.0', require: false
 end
