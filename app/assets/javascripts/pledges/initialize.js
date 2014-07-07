@@ -1,4 +1,6 @@
-$( document ).ready(function() {
+var ready;
+ready = function() {
+
   requestedItemsController = new RequestedItemsController(new RequestedItemsList, new RequestedItemsView);
   requestedItemsController.init()
 
@@ -8,4 +10,7 @@ $( document ).ready(function() {
   appController.listenForPledge();
   appController.listenForPledgesSubmit();
 
-});
+};
+
+$(document).ready(ready);
+$(document).on('page:load', ready);
